@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+        <!-- ISO SeekBar and TextView -->
+        <SeekBar
+            android:id="@+id/iso_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="1000"
+            android:progress="400"
+            android:progressBackgroundTint="@color/light_gray"
+            android:splitTrack="false"
+            android:thumbOffset="4dp"
+            android:thumbTint="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/iso_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ISO: 400"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Shutter Speed SeekBar and TextView -->
+        <SeekBar
+            android:id="@+id/shutter_speed_seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="4000"
+            android:progress="500"
+            android:progressBackgroundTint="@color/light_gray"
+            android:thumbTint="@color/dark_gray"
+            android:thumbOffset="4dp"
+            android:splitTrack="false"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/shutter_speed_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Shutter Speed: 1/500s"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Aperture Spinner -->
+        <TextView
+            android:id="@+id/aperture_label_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aperture"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <Spinner
+            android:id="@+id/aperture_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:entries="@array/aperture_array"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp"
+            android:background="@color/light_blue"
+            android:layout_marginTop="8dp"/>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/calculate_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate"
+            android:textColor="@color/white"
+            android:background="@color/purple_500"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp" />
+
+        <!-- Result TextView -->
+        <TextView
+            android:id="@+id/result_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exposure: "
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+</LinearLayout>

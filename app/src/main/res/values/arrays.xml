@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="aperture_array">
+        <item>f/1.4</item>
+        <item>f/2</item>
+        <item>f/2.8</item>
+        <item>f/4</item>
+        <item>f/5.6</item>
+        <item>f/8</item>
+        <item>f/11</item>
+        <item>f/16</item>
+        <item>f/22</item>
+    </string-array>
+</resources>

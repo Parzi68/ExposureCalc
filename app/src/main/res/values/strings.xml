@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Exposure_Calc</string>
+    <string name="calculate">Calculate</string>
+    <string name="exposure_time">Exposure Time</string>
+</resources>
